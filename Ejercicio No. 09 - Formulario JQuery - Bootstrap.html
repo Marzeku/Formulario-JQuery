@@ -1,0 +1,178 @@
+<html>
+<head>
+<title>Registros Formulario JQuery - Bootstrap</title>
+<link 
+	  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+	  rel="stylesheet" 
+	  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+	  crossorigin="anonymous">
+</head>
+<body>
+
+<script>
+	alert("Bienvenido al Formulario de JQuery - Bootstrap")
+	alert("A continuación, se muestra el formulario para diligenciar en la tabla con la opción Aceptar")
+</script>
+	
+<h3 class="display-6" id = "h1"><center><b> FORMULARIO JQUERY - BOOTSTRAP </b></center></h3>
+
+<br>
+<div class="container-fluid">
+<form class="row g-3 needs-validation" novalidate>
+   
+  <div class="col-md-4">
+    <center><label for="Nombres" class="form-label"><b>Nombres</b></label></center>
+    <input type="text" class="form-control" id="Nombres" value="" required>
+  </div>
+  
+  <div class="col-md-4">
+    <center><label for="Apellidos" class="form-label"><b>Apellidos</b></label></center>
+    <input type="text" class="form-control" id="Apellidos" value="" required>
+  </div>
+  
+  <div class="col-md-4">
+    <center><label for="Usuario" class="form-label"><b>Nombre de usuario</b></label></center>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="text" class="form-control" id="Usuario" aria-describedby="inputGroupPrepend" required>
+    </div>
+  </div>
+  
+  <div class="col-md-4">
+    <center><label for="Departamento" class="form-label"><b>Departamento</b></label></center>
+    <select class="form-select" id="Departamento" required>
+      <option selected disabled value="">Seleccionar Departamento</option>
+	  <option>Amazonas</option>
+      <option>Antioquia</option>
+	  <option>Arauca</option>
+	  <option>Archipiélago de San Andrés</option>
+	  <option>Atlántico</option>
+	  <option>Bogotá D.C.</option>
+	  <option>Bolivar</option>
+	  <option>Boyacá</option>
+	  <option>Caldas</option>
+	  <option>Caquetá</option>
+	  <option>Casanare</option>
+	  <option>Cauca</option>
+	  <option>Cesar</option>
+	  <option>Chocó</option>
+	  <option>Córdoba</option>
+	  <option>Cundinamarca</option>
+	  <option>Guainía</option>
+	  <option>Guaviare</option>
+	  <option>Huila</option>
+	  <option>La Guajira</option>
+	  <option>Magdalena</option>
+	  <option>Meta</option>
+	  <option>Nariño</option>
+	  <option>Norte de Santander</option>
+	  <option>Putumayo</option>
+	  <option>Quindío</option>
+	  <option>Risaralda</option>
+	  <option>Santander</option>
+	  <option>Sucre</option>
+	  <option>Tolima</option>
+	  <option>Valle del Cauca</option>
+	  <option>Vaupés</option>
+	  <option>Vichada</option>
+    </select>
+  </div>
+  
+  <div class="col-md-4">
+    <center><label for="Ciudad" class="form-label"><b>Ciudad</b></label></center>
+    <select class="form-select" id="Ciudad" required>
+      <option selected disabled value="">Seleccionar Ciudad</option>
+	  <option>Armenía</option>
+	  <option>Barranquilla</option>
+	  <option>Bello</option>
+	  <option>Bogotá</option>
+	  <option>Bucaramanga</option>
+	  <option>Buenaventura</option>
+      <option>Medellín</option>
+	  <option>Calí</option>
+	  <option>Cartagena</option>
+	  <option>Cartago</option>
+	  <option>Chía</option>
+	  <option>Cúcuta</option>
+	  <option>Envigado</option>
+	  <option>Facatativá</option>
+	  <option>Ibagué</option>
+	  <option>Manizales</option>
+	  <option>Montería</option>
+	  <option>Neiva</option>
+	  <option>Pasto</option>
+	  <option>Pereira</option>
+	  <option>Popayán</option>
+	  <option>Quibdo</option>
+	  <option>Riochada</option>
+	  <option>Santa Marta</option>
+	  <option>Sincelejo</option>
+	  <option>Soacha</option>
+	  <option>Soledad</option>
+	  <option>Tulúa</option>
+	  <option>Valledupar</option>
+	  <option>Villavicencio</option>
+	  <option>Zipaquirá</option>
+    </select>
+  </div>
+  
+  <div class="col-md-4">
+    <center><label for="Estrato" class="form-label"><b>Estrato</b></label></center>
+    <select class="form-select" id="Estrato" required>
+      <option selected disabled value="">Seleccionar Estrato</option>
+	  <option>1. Bajo - Bajo</option>
+      <option>2. Bajo</option>
+	  <option>3. Medio - Bajo</option>
+	  <option>4. Medio</option>
+	  <option>5. Medio - Alto</option>
+	  <option>6. Alto</option>
+    </select>
+  </div>
+  
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Aceptar Tratamiento de Datos Personales
+      </label>
+    </div>
+  </div>
+
+  <div class="col-12">
+    &nbsp;&nbsp;&nbsp;<input type="button" value="Aceptar" class="btn btn-primary" id="Aceptar">
+	&nbsp;&nbsp;&nbsp;<input type="reset" value="Borrar valores" class="btn btn-danger" id="Nuevo">
+  </div>
+  
+</form>
+</div> 
+
+<h4 class="display-8" id = "h1"><center><b> TABLA DE REGISTROS </b></center></h4>
+
+<br>
+
+<table class="table" id="Tabla_Formulario">
+
+  <thead>
+    <tr>
+      <th scope="col">Nombres</th>
+      <th scope="col">Apellidos</th>
+	  <th scope="col">Nombre Usuario</th>
+      <th scope="col">Departamento</th>
+	  <th scope="col">Ciudad</th>
+	  <th scope="col">Estrato</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+	
+  </tbody>
+  
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+   crossorigin="anonymous"></script>
+<script src = "Ejercicio No. 09 - Formulario JQuery - Bootstrap.js"></script>
+
+</body>
+</html>
